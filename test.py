@@ -1,14 +1,23 @@
-import tensorflow as tf
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import CuDNNLSTM
-import ctypes
+import loader
+import matplotlib.pyplot as plt
+import calendar as cal
+from model import Model
 
 if __name__ == '__main__':
-    print(tf.version)
+    #loader.generate()
 
-    #mnist = tf.keras.datasets.mnist
+    '''imgs, keys = loader.load()
 
-    #(x_train, y_train), (x_test, y_test) = mnist.load_data()
+    top_5_percent = int(imgs.shape[0] * (5 / 100))
 
-    
+    x_val = imgs[:top_5_percent]
+    y_val = keys[:top_5_percent]
 
+    print(imgs.shape, keys.shape)
+    print(x_val.shape, y_val.shape)
+
+    #x_val, y_val = loader.load_from(top_5_percent)'''
+
+    #m = Model()
+
+    #print(m.summary())
